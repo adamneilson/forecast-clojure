@@ -7,7 +7,7 @@ A Clojure library for retrieving data from the [forecast.io](https://developer.d
 `forecast-clojure` is available as a Maven artifact from [Clojars](http://clojars.org/forecast-clojure):
 
 ```clojure
-[forecast-clojure "1.0.3"]
+[forecast-clojure "1.0.4"]
 ```
 
 ## Configuration
@@ -29,7 +29,7 @@ FORECAST_KEY=insert-your-api-key-here
 ## Usage
 
 ```clojure
-(require '[forecast-clojure.core :as forecast])
+(require '[forecast-clojure.core :refer :all])
 
 (forecast "37.8267" "-122.423")
 (forecast "37.8267" "-122.423" :time 1362974400)
